@@ -1,5 +1,5 @@
-# VinV — Value-in-Vogue
-Dividend Durability • Value Leadership • Macro-Regime Analysis
+<p align="center"> # VinV — Value-in-Vogue
+Dividend Durability • Value Leadership • Macro-Regime Analysis</p>
 
 <p align="center">
   <img src="https://github.com/sobcza11/VinV/blob/main/_assets/vinv_m.png" alt="Value in Vogue Banner" width="90%">
