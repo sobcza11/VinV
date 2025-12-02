@@ -1,4 +1,4 @@
-<h1><p align="center">Value_in_Vogue ~<i>VinV</i></h1>
+<h1><p align="center">Value <i>in</i> Vogue ~<i>VinV</i></h1>
 <h4><p align="center">• Dividend Durability • Value Leadership • Macro-Regime Analysis •</p></h4>
 
 <p align="center">
