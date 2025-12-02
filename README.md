@@ -28,7 +28,8 @@ The central research question:
 
 > **Do U.S. equities that have maintained or raised dividends for ~30 years reliably exhibit value-style resilience across stressed market regimes?**
 
-To evaluate this, VinV constructs a dataset of U.S.-listed equities that have **never reduced dividends since January 1990**.  
+To evaluate this, VinV constructs a dataset of U.S.-listed equities that have **never reduced dividends since January 1990**.
+
 This enables:
 
 - dividend durability as a proxy for balance-sheet strength  
