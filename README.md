@@ -77,7 +77,7 @@ Reusable utilities for data prep, validation, and loading
 
 ---
 
-## 📊 FinTech-Relevant Roadmap
+## 📊 Roadmap
 
 - **VinV Signal:** A factor-style indicator quantifying value-leadership probability.  
 - **Macro-Regime Overlay:** Compatibility with OracleChambers canonical regimes.  
