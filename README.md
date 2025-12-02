@@ -82,15 +82,17 @@ Reusable utilities for data prep, validation, and loading
 ---
 
 ## ⚖️ Risk Warning
-All content is for research and educational purposes only.  
-This repository does not constitute financial advice and does not account for personal profile, objectives, risk capacity, or financial means.  
-No responsibility is assumed for outcomes derived from the material herein.  
+**All content is for research and educational purposes only.**
+
+**This repository does not constitute financial advice and does not account for personal profile, objectives, risk capacity, or financial means.  
+No responsibility is assumed for outcomes derived from the material herein.**  
+
 Past performance does not guarantee future results. Consult a licensed financial professional for investment decisions.
 
 ---
 
 ## 📎 License
-MIT License — chosen for clarity, flexibility, and compatibility with open research and FinTech development.
+MIT License
 
 ---
 
