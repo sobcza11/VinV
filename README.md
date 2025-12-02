@@ -1,4 +1,4 @@
-<h1><p align="center"><b>VinV</b> — <i>Value-in-Vogue</i></h1>
+<h1><p align="center">VinV — <i>Value-in-Vogue</i></h1>
 <h4><p align="center"> Dividend Durability • Value Leadership • Macro-Regime Analysis</p></h4>
 
 <p align="center">
@@ -9,9 +9,9 @@
 ---
 
 ## 🧭 Overview
-Value-in-Vogue (VinV) investigates whether long-horizon dividend durability is a reliable indicator of value-style leadership across shifting macro-economic regimes.
+**Value-in-Vogue (VinV)** investigates whether **long-horizon dividend durability** is a reliable indicator of value-style leadership across shifting macro-economic regimes.
 
-Originally informed by post-2021 market dynamics, VinV has been generalized into a broader, institution-grade research model positioned within the OracleChambers. It supports structured macro-state inference, factor drift tracking, and long-cycle analysis under combinations of:
+Originally informed by post-2021 market dynamics, **VinV** has been generalized into a broader, institution-grade research model positioned within <i>the</i>_OracleChambers. It supports structured macro-state inference, factor drift tracking, and long-cycle analysis under combinations of:
 
 - slow or contracting growth  
 - persistent inflation or cost pressures  
