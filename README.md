@@ -2,7 +2,7 @@
 <h4><p align="center">• Dividend Durability • Value Leadership • Macro-Regime Analysis •</p></h4>
 
 <p align="center">
-  <img src="https://github.com/sobcza11/VinV/blob/main/_assets/vinv_m_abberv.png" alt="Value in Vogue Banner" width="90%">
+  <img src="https://github.com/sobcza11/VinV/blob/main/_assets/vinv_m_abrv.png" alt="Value in Vogue Banner" width="90%">
 </p>
 
 
