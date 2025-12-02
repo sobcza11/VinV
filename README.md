@@ -1,4 +1,4 @@
-<h1><p align="center">VinV — Value-in-Vogue</h1>
+<h1><p align="center">VinV — <i>Value-in-Vogue</i>></h1>
 <h4><p align="center"> Dividend Durability • Value Leadership • Macro-Regime Analysis</p></h4>
 
 <p align="center">
