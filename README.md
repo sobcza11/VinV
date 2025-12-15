@@ -9,96 +9,157 @@
 ---
 
 ## 🧭 Overview
-**Value-*in*-Vogue (*VinV*)** investigates whether **long-horizon dividend durability** is a reliable indicator of value-style leadership across shifting macro-economic regimes.
+**Value-<i>in</i>-Vogue (<i>VinV</i>)** is a governed, macro-aware machine-learning equity ranking engine that converts **macroeconomic, positioning, factor, and energy signals** into **probabilistic tranche rankings**.
 
-Originally informed by post-2021 market dynamics, **VinV** has been generalized into a broader, institution-grade research model positioned within <i>the</i>_OracleChambers. It supports structured macro-state inference, factor drift tracking, and long-cycle analysis under combinations of:
-
-- slow or contracting growth  
-- persistent inflation or cost pressures  
-- volatility clusters  
-- liquidity constraints  
-- regime inflection points  
-
-VinV is designed as a durable research component within the OracleChambers ecosystem.
+VinV is validated through **walk-forward testing**, translated into **portfolio-level outcomes**, and frozen with **audit-ready artifacts**.  
+It is designed to meet **FinTech, institutional, and academic review standards**.
 
 ---
 
-## 📘 Description
-The central research question:
+## 🧱 System Context & Boundaries
 
-> **Do U.S. equities that have maintained or raised dividends for ~30 years reliably exhibit value-style resilience across stressed market regimes?**
+VinV operates within a deliberately modular research stack:
 
-To evaluate this, VinV constructs a dataset of U.S.-listed equities that have **never reduced dividends since January 1990**.
+- **the_Spine** — canonical data fusion layer  
+  *(SSOT, frequency normalization, availability flags)*
 
-This enables:
+- **VinV** — machine-learning engine *(this module)*
 
-- dividend durability as a proxy for balance-sheet strength  
-- long-run value identification beyond price ratios  
-- historical regime testing  
-- performance comparison to the iShares Russell 1000 Value ETF (`IWD`) during volatility events  
+- **QDT (Quantitative Debasement Theory)** — regime labeling only  
+  *(contextual, non-blocking)*
 
-### CPMAI Alignment
-VinV adheres to CPMAI methodology for transparent and reproducible research:
+- **OracleChambers** — interpretive layer only  
+  *(no signal creation)*
 
-- **Phase I — Business Understanding:** Define the value-equity inquiry and the role of dividend stability.  
-- **Phase II — Data Understanding:** Validate sources (ex: WRDS), historical coverage, granularity, and limitations.  
-- **Phase III — Data Preparation:** Clean, validate, and structure the dividend-durability dataset using governance controls.  
-- **Phase IV — Modeling:** Apply regime segmentation, volatility slicing, and factor comparison to IWD.  
-- **Phase V — Evaluation:** Interpret VinV signal behavior across economic states.  
-- **Phase VI — Operationalization (Future):** Integrate VinV outputs as a module within the OracleChambers.
+**VinV is fully functional and ML-complete without QDT or OracleChambers.**  
+Those layers add *context*, not *credibility*.
 
 ---
 
-## 📁 Repository Structure
+## 🧠 ML Operating Mantra (Non-Negotiable)
 
-/data/
-Secure data store (password-protected)
-Contains curated dividend histories and equity metadata
-Access requires direct request due to licensing constraints
+> **We establish lift with baselines, prove stability via walk-forward validation, translate probabilities into portfolio outcomes, and govern the entire pipeline with CPMAI controls and audit-ready artifacts.**
 
-/notebooks/
-Research development notebooks
-Includes:
-- dividend durability construction
-- regime segmentation studies
-- volatility-era performance comparison
-- IWD benchmark analysis
-
-/reports/
-Research briefs summarizing findings
-Includes Visuals, regime overlays, and factor-drift commentary
-
-/figures/
-Generated plots and charts used across reports and documentation
-
-/scripts/
-Reusable utilities for data prep, validation, and loading
-
+This principle governs all modeling decisions.
 
 ---
 
-## 📊 Roadmap
+## ⚙️ Modeling Discipline & Controls
 
-- **VinV Signal:** A factor-style indicator quantifying value-leadership probability.  
-- **Macro-Regime Overlay:** Compatibility with OracleChambers canonical regimes.  
-- **Stress Episode Replay:** Testing behavior during 2000, 2008, 2020, and 2022 volatility clusters.  
-- **Factor Drift Sheet:** Tracking structural shifts in dividend durability vs. liquidity, inflation, and policy cycles.  
-- **Integration into the_Spine:** Cross-asset synthesis for broader macro-state classification.
+VinV follows an intentional, FinTech-grade model ladder:
+
+- **Baselines first:** Dummy → Linear → Tree → Boosted  
+- **Leakage control:** all preprocessing applied to **X-only**  
+- **Macro stability:** rolling features, winsorization, noise reduction  
+- **Validation:** time-respecting walk-forward validation (WFV)  
+- **Selection:** empirical, deterministic, no manual overrides  
+- **Translation:** evaluation at the **portfolio level**
+
+No deep learning.  
+No novelty chasing.  
+**Stability and governance are prioritized over complexity.**
 
 ---
 
-## ⚖️ Risk Warning
-**All content is for research and educational purposes only.**
+## 🗄️ Single Source of Truth (SSOT)
 
-**This repository does not constitute financial advice and does not account for personal profile, objectives, risk capacity, or financial means.  
-No responsibility is assumed for outcomes derived from the material herein.**  
+All VinV modeling derives from a **frozen, canonical SSOT** built from authoritative macro and market sources.
 
-Past performance does not guarantee future results. Consult a licensed financial professional for investment decisions.
+**Artifacts:**
+
+**Metrics include:**
+- AUC (classification quality)  
+- Top-decile lift  
+- Long/short portfolio Sharpe  
+- Stability across folds  
+
+These files constitute the **primary performance evidence** for VinV.
+
+---
+
+## 🏆 Champion Model (vFinal)
+
+- **Champion Model:** `tier1_logistic_l2`  
+- **Selection Basis:** highest walk-forward stability on the evaluated universe  
+- **Final Refit Cutoff:** **2025-11-01**
+
+The champion is selected **empirically**, not heuristically.  
+Given the universe size, **stability and calibration dominated raw complexity**.
+
+This reflects **maturity**, not underfitting.
+
+---
+
+## 🔒 Final Refit & Freeze
+
+The champion model is refit on all data available **up to the final WFV cutoff**, then frozen.
+
+**Freeze artifacts:**
+the_Spine/vinv/champion/vinv_champion_freeze_20251215T213325Z/
+├─ champion_model.joblib
+├─ champion_freeze_manifest.json
+├─ freeze_hashes_sha256.json
+
+yaml
+Copy code
+
+**Controls enforced:**
+- deterministic selection policy  
+- timestamped freeze  
+- SHA-256 hash locking  
+- Git-tagged release  
+
+These artifacts are **audit-ready**.
+
+---
+
+## 🛡️ CPMAI Governance Alignment
+
+VinV explicitly aligns with **PMI-CPMAI** principles:
+
+- simpler methods before complexity  
+- separation of data, modeling, and interpretation  
+- provenance and versioning  
+- anti-leakage controls  
+- reviewable, immutable evidence  
+
+The repository intentionally contains:
+- **code**
+- **results evidence**
+- **governance artifacts**
+
+Raw data and heavy binaries are excluded by design.
+
+---
+
+## 🚀 What VinV Enables (Forward-Looking)
+
+VinV provides a governed foundation for:
+
+- regime-conditioned extensions (via QDT)  
+- universe expansion (WRDS / broader equity coverage)  
+- allocator-specific variants (e.g., long-only)  
+- interpretive overlays (OracleChambers)  
+
+All extensions preserve the same validation and governance posture.
+
+---
+
+## 🎯 Final Positioning
+
+**VinV is a fully governed, macro-aware ML equity ranking engine built on authoritative data, validated through walk-forward testing, translated into portfolio outcomes, and frozen with audit-ready artifacts.**
+
+It is ready for **institutional, sponsor, and faculty review**.
+
+---
+
+## ⚖️ Risk & Use Disclaimer
+All content is for **research and educational purposes only**.  
+This repository does not constitute investment advice or recommendations.  
+Past performance does not guarantee future results.
 
 ---
 
 ## 📎 License
 MIT License
-
----
 
