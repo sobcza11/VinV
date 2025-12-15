@@ -66,8 +66,10 @@ No novelty chasing.
 All VinV modeling derives from a **frozen, canonical SSOT** built from authoritative macro and market sources.
 
 **Artifacts:**
+```text
 the_Spine/vinv/ssot/vinv_ml_ssot_vFinal.parquet
 the_Spine/vinv/ssot/vinv_modeling_view_vFinal.parquet
+```
 
 ```text
 the_Spine/vinv/champion/vinv_champion_freeze_20251215T213325Z/
