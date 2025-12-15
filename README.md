@@ -71,6 +71,7 @@ the_Spine/vinv/ssot/vinv_modeling_view_vFinal.parquet
 
 ```text
 the_Spine/vinv/champion/vinv_champion_freeze_20251215T213325Z/
+
 ├─ champion_model.joblib
 ├─ champion_freeze_manifest.json
 ├─ freeze_hashes_sha256.json
