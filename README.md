@@ -25,7 +25,7 @@ VinV operates within a deliberately modular research stack:
 
 - **VinV** — machine-learning engine *(this module)*
 
-- **QDT (Quantitative Debasement Theory)** — regime labeling only  
+- **FT-GMI (4th Turning, Global Macro-Stability Index)** — Regime-aware macro-financial diagnostics  
   *(contextual, non-blocking)*
 
 - **OracleChambers** — interpretive layer only  
