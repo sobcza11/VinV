@@ -25,8 +25,8 @@ VinV operates within a deliberately modular research stack:
 
 - **VinV** — machine-learning engine *(this module)*
 
-- **FT-GMI (4th Turning, Global Macro-Stability Index)** — Regime-aware macro-financial diagnostics  
-  *(contextual, non-blocking)*
+- **FT-GMI** — 4th Turning, Global Macro-Stability Index  
+  *(Regime-aware macro-financial diagnostics, non-blocking)*
 
 - **OracleChambers** — interpretive layer only  
   *(no signal creation)*
