@@ -94,15 +94,13 @@ the_Spine/vinv/ssot/
 
 ## 🏆 **Champion Model (*vFinal*)**
 
-Champion: tier1_logistic_l2
+- Champion: tier1_logistic_l2
+- Selection basis: highest walk-forward stability
+- Final refit cutoff: 2025-11-01
 
-Selection basis: highest walk-forward stability
+The champion is selected **empirically, not heuristically**.
 
-Final refit cutoff: 2025-11-01
-
-The champion is selected empirically, not heuristically.
-
-This reflects maturity and governance discipline, not underfitting.
+This reflects **maturity and governance discipline**, not underfitting.
 
 ## 🔒 **Final Refit & Freeze (*Audit-Ready*)**
 ```text
