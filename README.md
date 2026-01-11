@@ -23,7 +23,7 @@ VinV **does not forecast returns, optimize portfolios, or generate allocation si
 
 VinV operates within a strictly ordered research stack:
 
-1. **the_Spine**  
+1. ***the* Spine**  
    Canonical macro-financial data fusion layer  
    *(single source of truth, frequency normalization, locked semantics)*
 
@@ -34,7 +34,7 @@ VinV operates within a strictly ordered research stack:
 3. **VinV** *(this repository)*  
    Equity behavior evaluation **conditioned on FT-GMI regimes**
 
-4. **OracleChambers**  
+4. ***the* OracleChambers**  
    Interpretive narrative & validation layer only  
    *(no signal creation, no feedback upstream)*
 
