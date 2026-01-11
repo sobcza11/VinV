@@ -1,177 +1,170 @@
-<h1><p align="center">Value-<i>in</i>-Vogue ~<i>VinV</i></h1>
-<h4><p align="center">• Dividend Durability • Value Leadership • Macro-Regime Analysis •</p></h4>
+<h1><p align="center">Value-<i>in</i>-Vogue ~ <i>VinV</i></p></h1>
+<h4><p align="center">Dividend Persistence • Value Structure • Regime-Conditioned Equity Behavior</p></h4>
 
 <p align="center">
   <img src="https://github.com/sobcza11/VinV/blob/main/_assets/vinv_m.png" alt="Value in Vogue Banner" width="90%">
 </p>
 
+---
+
+## 🧭 **Overview**
+
+**Value-<i>in</i>-Vogue (VinV)** is a **downstream, regime-conditioned equity research system** designed to evaluate **capital behavior of dividend-persistent, value-oriented equities** under **fixed macro-financial regimes**.
+
+VinV is **descriptive, not predictive**.
+
+It applies disciplined statistical & machine-learning methods **only after macro regimes are defined upstream**, translating observed equity behavior into **auditable, reproducible research artifacts** suitable for academic, institutional, & FinTech review.
+
+VinV **does not forecast returns, optimize portfolios, or generate allocation signals**.
 
 ---
 
-## 🧭 Overview
-**Value-<i>in</i>-Vogue (<i>VinV</i>)** is a governed, macro-aware machine-learning equity ranking engine that converts **macroeconomic, positioning, factor, and energy signals** into **probabilistic tranche rankings**.
+## 🧱 **System Context & Hierarchy (*Non-Negotiable*)**
 
-VinV is validated through **walk-forward testing**, translated into **portfolio-level outcomes**, and frozen with **audit-ready artifacts**.  
-It is designed to meet **FinTech, institutional, and academic review standards**.
+VinV operates within a strictly ordered research stack:
 
----
+1. **the_Spine**  
+   Canonical macro-financial data fusion layer  
+   *(single source of truth, frequency normalization, locked semantics)*
 
-## 🧱 System Context & Boundaries
+2. **FT-GMI**  
+   Regime-aware macro-financial diagnostics  
+   *(defines regimes & stress windows; read-only)*
 
-VinV operates within a deliberately modular research stack:
+3. **VinV** *(this repository)*  
+   Equity behavior evaluation **conditioned on FT-GMI regimes**
 
-- **the_Spine** — canonical data fusion layer  
-  *(SSOT, frequency normalization, availability flags)*
+4. **OracleChambers**  
+   Interpretive narrative & validation layer only  
+   *(no signal creation, no feedback upstream)*
 
-- **VinV** — machine-learning engine *(this module)*
+**Dependency is strictly one-way:**  
+`the_Spine → FT-GMI → VinV → OracleChambers`
 
-- **FT-GMI** — 4th Turning, Global Macro-Stability Index  
-  *(Regime-aware macro-financial diagnostics, non-blocking)*
-
-- **OracleChambers** — interpretive layer only  
-  *(no signal creation)*
-
-**VinV is fully functional and ML-complete without QDT or OracleChambers.**  
-Those layers add *context*, not *credibility*.
+VinV never alters upstream data, regimes, or diagnostics.
 
 ---
 
-## 🧠 ML Operating Mantra (Non-Negotiable)
+## 🧠 **What VinV Does (*& Does Not Do*)**
 
-> **We establish lift with baselines, prove stability via walk-forward validation, translate probabilities into portfolio outcomes, and govern the entire pipeline with CPMAI controls and audit-ready artifacts.**
+### ✅ VinV Does
+- Evaluate equity behavior **within fixed macro regimes**
+- Apply **time-respecting walk-forward validation**
+- Translate probabilistic outputs into **portfolio-level descriptive outcomes**
+- Produce **frozen, audit-ready artifacts**
+- Prioritize stability, interpretability, & governance over model complexity
 
-This principle governs all modeling decisions.
+### ❌ VinV Does Not
+- Forecast returns
+- Time markets
+- Optimize allocations
+- Generate trading signals
+- Feed outcomes back into diagnostics
 
 ---
 
-## ⚙️ Modeling Discipline & Controls
+## ⚙️ **Modeling Discipline (*Applied, Governed*)**
 
-VinV follows an intentional, FinTech-grade model ladder:
+VinV uses machine-learning **as an implementation tool**, not an authority.
 
-- **Baselines first:** Dummy → Linear → Tree → Boosted  
-- **Leakage control:** all preprocessing applied to **X-only**  
-- **Macro stability:** rolling features, winsorization, noise reduction  
-- **Validation:** time-respecting walk-forward validation (WFV)  
-- **Selection:** empirical, deterministic, no manual overrides  
-- **Translation:** evaluation at the **portfolio level**
+Modeling follows a deterministic ladder:
+- Baselines → Linear → Tree → Boosted
+- Leakage-safe preprocessing (X-only)
+- Rolling features & winsorization
+- Time-respecting walk-forward validation
+- Empirical selection (no manual overrides)
+- Portfolio-level evaluation (not point forecasts)
 
 No deep learning.  
 No novelty chasing.  
-**Stability and governance are prioritized over complexity.**
+**Stability & governance dominate complexity.**
 
 ---
 
 ## 🗄️ Single Source of Truth (SSOT)
 
-All VinV modeling derives from a **frozen, canonical SSOT** built from authoritative macro and market sources.
-
-**Artifacts:**
-```text
-the_Spine/vinv/ssot/vinv_ml_ssot_vFinal.parquet
-the_Spine/vinv/ssot/vinv_modeling_view_vFinal.parquet
-```
+All VinV modeling derives from **frozen, canonical parquet artifacts** produced by the Spine.
 
 ```text
-the_Spine/vinv/champion/vinv_champion_freeze_20251215T213325Z/
-
-├─ champion_model.joblib
-├─ champion_freeze_manifest.json
-├─ freeze_hashes_sha256.json
+the_Spine/vinv/ssot/
+├── vinv_ml_ssot_vFinal.parquet
+├── vinv_modeling_view_vFinal.parquet
 ```
 
-**Metrics include:**
-- AUC (classification quality)  
-- Top-decile lift  
-- Long/short portfolio Sharpe  
-- Stability across folds  
 
-These files constitute the **primary performance evidence** for VinV.
+## 🏆 **Champion Model (*vFinal*)**
 
----
+Champion: tier1_logistic_l2
 
-## 🏆 Champion Model (vFinal)
+Selection basis: highest walk-forward stability
 
-- **Champion Model:** `tier1_logistic_l2`  
-- **Selection Basis:** highest walk-forward stability on the evaluated universe  
-- **Final Refit Cutoff:** **2025-11-01**
+Final refit cutoff: 2025-11-01
 
-The champion is selected **empirically**, not heuristically.  
-Given the universe size, **stability and calibration dominated raw complexity**.
+The champion is selected empirically, not heuristically.
 
-This reflects **maturity**, not underfitting.
+This reflects maturity and governance discipline, not underfitting.
 
----
-
-## 🔒 Final Refit & Freeze
-
-The champion model is refit on all data available **up to the final WFV cutoff**, then frozen.
-
-**Freeze artifacts:**
+## 🔒 **Final Refit & Freeze (*Audit-Ready*)**
+```text
 the_Spine/vinv/champion/vinv_champion_freeze_20251215T213325Z/
-├─ champion_model.joblib
-├─ champion_freeze_manifest.json
-├─ freeze_hashes_sha256.json
+├── champion_model.joblib
+├── champion_freeze_manifest.json
+├── freeze_hashes_sha256.json
+```
 
-yaml
-Copy code
+**Controls enforced**:
+- Deterministic selection policy
+- Timestamped freeze
+- SHA-256 hash locking
+- Git-tagged release
 
-**Controls enforced:**
-- deterministic selection policy  
-- timestamped freeze  
-- SHA-256 hash locking  
-- Git-tagged release  
+These artifacts constitute the primary empirical evidence for VinV.
 
-These artifacts are **audit-ready**.
+## 🛡️ **CPMAI Alignment**
 
----
+VinV aligns with **PMI-CPMAI principles**:
 
-## 🛡️ CPMAI Governance Alignment
+- Simpler methods before complexity
+- Separation of data, diagnostics, & interpretation
+- Full provenance & versioning
+- Anti-leakage controls
+- Immutable evidence artifacts
 
-VinV explicitly aligns with **PMI-CPMAI** principles:
+This repository intentionally contains:
 
-- simpler methods before complexity  
-- separation of data, modeling, and interpretation  
-- provenance and versioning  
-- anti-leakage controls  
-- reviewable, immutable evidence  
+- Code
+- Results evidence
+- Governance artifacts
 
-The repository intentionally contains:
-- **code**
-- **results evidence**
-- **governance artifacts**
+Raw licensed data is excluded by design.
 
-Raw data and heavy binaries are excluded by design.
+## 🚀 **What VinV Enables (*Post-Freeze*)**
 
----
+Once FT-GMI is finalized, VinV can support:
 
-## 🚀 What VinV Enables (Forward-Looking)
+- Cross-regime equity comparisons
+- Stress-aware evaluation extensions
+- Broader universes (e.g., WRDS-backed)
+- Interpretive overlays via OracleChambers
 
-VinV provides a governed foundation for:
+All extensions preserve the same governance posture.
 
-- regime-conditioned extensions (via QDT)  
-- universe expansion (WRDS / broader equity coverage)  
-- allocator-specific variants (e.g., long-only)  
-- interpretive overlays (OracleChambers)  
+## 🎯 Positioning Summary
 
-All extensions preserve the same validation and governance posture.
+**VinV is a bounded, governed, regime-conditioned equity research system** that evaluates how equity constructions behave under defined macro contexts.
 
----
+It is:
 
-## 🎯 Final Positioning
+- Diagnostic, not predictive
+- Applied, not promotional
+- Stable, auditable, & review-ready
 
-**VinV is a fully governed, macro-aware ML equity ranking engine built on authoritative data, validated through walk-forward testing, translated into portfolio outcomes, and frozen with audit-ready artifacts.**
+## ⚖️ **Disclaimer**
 
-It is ready for **institutional, sponsor, and faculty review**.
+This repository is for research and educational purposes only.
+It does not constitute investment advice, forecasts, or recommendations.
 
----
+## 📎 **License**
 
-## ⚖️ Risk & Use Disclaimer
-All content is for **research and educational purposes only**.  
-This repository does not constitute investment advice or recommendations.  
-Past performance does not guarantee future results.
-
----
-
-## 📎 License
 MIT License
 
